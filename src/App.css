@@ -10,41 +10,101 @@
 /* Navbar */
 
 .nav-text {
-
-}
-
-.nav-text {
   display: flex;
   justify-content: space-around;
 
 width: 100%;
 }
 
-.nav-button1 {
+.sign-btn {
   background-color: white;
-  border: none;
   white-space: nowrap;
 }
 
-.nav-button2 {
+.register-btn {
   background-color: #EF6A31;
+  padding: 10px 20px;
+  border-radius: 5%;
+  font-family: Roboto;
+}
+
+.sign-btn, .register-btn {
+  border: none;
+}
+
+.nav-text, .nav-link, .sign-btn {
+  font-family: Roboto;
+  color: #293646;
+}
+
+.sign-btn:hover:hover {
+  background-color: white; /* Reset the background color to normal state */
+  color: #293646; /* Reset the text color to normal state */
+}
+
+.register-btn:hover:hover {
+  background-color: #EF6A31; /* Reset the background color to normal state */
+}
+
+/* HomePage */
+
+.hero-container-left {
+width: 100%;
+}
+
+.hero-subtext {
+  color: #293646;
+  
+}
+
+.hero-title, .hero-cta {
+  font-family: Roboto;
+}
+
+.book-ride-btn {
+  background-color: #EF6A31;
+}
+
+.learn-more-btn {
+  background-color: #293646;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1em;
+}
+
+.book-ride-btn, .learn-more-btn {
   border: none;
   padding: 10px 20px;
   border-radius: 5%;
   font-family: Roboto;
 }
 
-.nav-text, .nav-link, .nav-button1 {
-  font-family: Roboto;
-  color: #293646;
-}
+.book-ride-btn:hover:hover {
+    background-color: #EF6A31; /* Reset the background color to normal state */
+    color: white; /* Reset the text color to normal state */
+  }
 
-.nav-button1:hover {
-  background-color: white; /* Reset the background color to normal state */
-  color: #293646; /* Reset the text color to normal state */
-}
+  .learn-more-btn:hover:hover {
+    background-color: #293646; /* Reset the background color to normal state */
+    color: white; /* Reset the text color to normal state */
+  }
 
-.nav-button2:hover {
-  background-color: #EF6A31; /* Reset the background color to normal state */
-}
+  .mercedes {
+    width: 100%;
+  }
 
+  .hero {
+    display: flex;
+    width: 100%;
+    padding: 1em;
+    margin-top: 5em;
+  }
+
+  .circle {
+    background-color: red;
+    border-radius: 50%;
+    z-index: -1;
+    width: 100%;
+  }

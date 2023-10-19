@@ -18,8 +18,8 @@ function MyNavbar() {
             <Nav.Link href="OurTeam">Our Team</Nav.Link>
             <Nav.Link href="ContactUs">Contact Us</Nav.Link>
           </Nav>
-          <Button className="nav-button1 d-none d-md-block">Sign In</Button>
-          <Button className="nav-button2 d-none d-md-block">Register</Button>
+          <Button className="sign-btn d-none d-md-block">Sign In</Button>
+          <Button className="register-btn d-none d-md-block">Register</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
