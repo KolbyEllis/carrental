@@ -6,14 +6,12 @@
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@900&display=swap');
-
-/* Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Didact+Gothic&family=Lexend:wght@500&family=Roboto:wght@900&display=swap');
 
 .nav-text {
   display: flex;
   justify-content: space-around;
-
-width: 100%;
+  width: 100%;
 }
 
 .sign-btn {
@@ -28,7 +26,7 @@ width: 100%;
   font-family: Roboto;
 }
 
-.sign-btn, .register-btn {
+.sign-btn, .register-btn, .search-btn {
   border: none;
 }
 
@@ -92,19 +90,138 @@ width: 100%;
   }
 
   .mercedes {
+    position: relative; /* Add relative positioning to the .mercedes container */
     width: 100%;
   }
+  
+  .city {
+    position: absolute; /* Add absolute positioning to the .city element */
+    top: 0; /* Position at the top of .mercedes */
+    right: 0; /* Position at the right of .mercedes */
+    width: 75%;
+    z-index: -1; /* Set z-index to -1 for .city */
+    width: 50%;
+  }
+  
+  .mercedes::before {
+    content: ""; /* Create a pseudo-element to push .city down */
+    display: block;
+    padding-top: 56.25%; /* Assuming a 16:9 aspect ratio for .mercedes */
+  }
+  
+  /* Rest of your existing CSS code */
+
 
   .hero {
     display: flex;
     width: 100%;
     padding: 1em;
-    margin-top: 5em;
+    margin-top: 6em;
   }
 
-  .circle {
-    background-color: red;
-    border-radius: 50%;
-    z-index: -1;
+  /* Search  */
+
+  .search-container {
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Customize the shadow here */
+    padding: 2em;
+    }
+
+  .search-btn {
+    width: 100%;
+    background-color: #EF6A31;
+    color: white;
+    border-radius: 0;
+    margin-top: 1.5em;
+    font-family: Roboto;
+  }
+
+  .datepicker-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-select, .date-selection {
+    cursor: pointer;
+  }
+
+  .form-label, .form-select, .search-title, .date-selection {
+    font-family: "Lexend";
+    }
+  
+  .form-select, .date-selection{      
+    color: #757575;
+    font-size: small;
+    }
+
+  .date-selection, .date-selection {
     width: 100%;
   }
+
+  .search-btn:hover:hover {
+    background-color: #EF6A31; 
+    color: white; 
+    
+  }
+
+  .search-icon {
+    color: #EF6A31;
+  }
+
+.test {
+  background-color: red;
+}
+
+/*Info */
+.test2 {
+text-align: center;
+padding: 8em;
+background-color: #EF6A31;
+}
+
+.test3 {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .date-selection {
+    width: 100%;
+  }
+}
+
+/* Styles for screens smaller than 576px */
+@media (max-width: 576px) {
+  .date-selection {
+    width: 100%;
+  }
+}
+
+

@@ -9,6 +9,8 @@ import VehicleModels from './pages/VehicleModels';
 import Testimonials from './pages/Testimonials';
 import OurTeam from './pages/OurTeam';
 import Contact from './pages/Contact';
+import Search from './components/search';
+import Info from './components/Info';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/OurTeam" element={<OurTeam />} />
         <Route path="/ContactUs" element={<Contact />} />
       </Routes>
+      <Search />
+      <Info />
     </Router>
 
   );
