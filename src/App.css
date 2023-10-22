@@ -173,15 +173,33 @@ width: 100%;
 }
 
 /*Info */
-.test2 {
+.info-container {
 text-align: center;
 padding: 8em;
-background-color: #EF6A31;
 }
 
-.test3 {
+.info-text {
+  font-family: "Lexend";
+  font-size: small;
+}
+
+.info-body {
+  margin: 2em;
+  border: none;
+}
+
+.info-card {
   display: flex;
   justify-content: center;
+  padding: 2em;
+}
+
+.info-card-title {
+  font-family: "Lexend";
+}
+
+.info-title, .info-text {
+font-family: #293646;
 }
 
 
@@ -192,7 +210,16 @@ background-color: #EF6A31;
 
 
 
+@media (max-width: 768px) {
+  .info-card {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center cards vertically */
+  }
 
+  .info-body {
+    width: 100%; /* Make card bodies full width on smaller screens */
+  }
+}
 
 
 
