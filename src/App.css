@@ -32,12 +32,12 @@
 
 .nav-text, .nav-link, .sign-btn {
   font-family: Roboto;
-  color: #293646;
+  color: #2D2D2D;
 }
 
 .sign-btn:hover:hover {
   background-color: white; /* Reset the background color to normal state */
-  color: #293646; /* Reset the text color to normal state */
+  color: #2D2D2D; /* Reset the text color to normal state */
 }
 
 .register-btn:hover:hover {
@@ -85,7 +85,7 @@ width: 100%;
   }
 
   .learn-more-btn:hover:hover {
-    background-color: #293646; /* Reset the background color to normal state */
+    background-color: #2D2D2D; /* Reset the background color to normal state */
     color: white; /* Reset the text color to normal state */
   }
 
@@ -199,16 +199,135 @@ padding: 8em;
 }
 
 .info-title, .info-text {
-font-family: #293646;
+color: #2D2D2D;
+}
+
+
+
+/*Car Reservation */
+.reservation-container {
+  text-align: center;
+  padding: 8em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.reservation-container-text {
+  color: #2D2D2D;
+}
+
+.nav-link {
+  margin: .5em;
+}
+
+.nav-link:hover {
+  color: #2D2D2D;
+}
+
+/* Custom CSS to style the active tab label when clicked */
+.active-tab-clicked {
+  background-color: #EF6A31 !important; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  font-weight: bold; /* Adjust text styling as needed */
+}
+
+.active-tab-clicked:hover {
+  color: white;
+}
+
+.flex-column {
+  width: 75%;
+}
+
+.car {
+  width: 100%;
+}
+
+.table-header {
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bolder;
+
+}
+
+.table-subtext {
+  margin-top: .5em;
+  font-weight: 400;
+}
+
+.table-header, .table-subtext {
+  color: white;
+  font-family: "Lexend";
+  background-color: #EF6A31;
+  padding: 0;
+}
+
+/* Set fixed width for table columns */
+th, td {
+  width: 50%; /* Adjust the value as needed */
+  font-family: "Lexend";
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+
+.golf {
+  background-color: #EF6A31 !important;
+  color: white;
+  border: none;
+  padding: 0 !important;
+}
+
+.reserve-btn {
+  background-color: #EF6A31;
+  color: white;
+  font-family: "Lexend";
+  margin-top: 1em;
+  border: none;
+  width: 16.7em;
+  height: 3em;
+}
+
+.span {
+  color: #EF6A31;
 }
 
 
 
 
+.car-table-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 
+/*Banner */
 
+.banner-content {
+  text-align: center;
+  background-color: #2D2D2D;
+  padding: 1.5rem;
+}
+.banner-content-title {
+  color: white;
+  font-family: "Lexend";
+  text-align: center;
+  font-size: 3.5rem;
+}
 
+.banner-content-paragraph {
+  font-family: "Lexend";
+  color: white;
+  font-size: 1.4rem;
+  font-weight: normal;
+  font-style: normal;
+}
 
 @media (max-width: 768px) {
   .info-card {

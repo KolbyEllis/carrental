@@ -1,0 +1,170 @@
+import React, { useState } from 'react';
+import { Col, Nav, Row, Tab, Table } from 'react-bootstrap';
+
+function CarReservation() {
+  const [activeTab, setActiveTab] = useState('AudiA1');
+
+  const handleTabClick = (eventKey) => {
+    setActiveTab(eventKey);
+  };
+
+  return (
+    <div className="reservation-container">
+      <h5>Vehicle Models</h5>
+      <h1>Our rental fleet</h1>
+      <p className="reservation-container-text">
+        Choose from a variety of our amazing vehicles to rent for your next
+        <br />
+        adventure or business trip
+      </p>
+
+      <Tab.Container activeKey={activeTab}>
+        <Row className="tab-row">
+          <Col sm={3}>
+            <Nav variant="pills" className="flex-column">
+              <Nav.Item>
+                <Nav.Link eventKey="AudiA1" onClick={() => handleTabClick("AudiA1")} className={activeTab === "AudiA1" ? "active-tab-clicked" : ""}>Audi A1 S-Line</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="VWGolf6" onClick={() => handleTabClick("VWGolf6")} className={activeTab === "VWGolf6" ? "active-tab-clicked" : ""}>VW Golf 6</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="ToyotaCamry" onClick={() => handleTabClick("ToyotaCamry")} className={activeTab === "ToyotaCamry" ? "active-tab-clicked" : ""}>Toyota Camry</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="BMW320" onClick={() => handleTabClick("BMW320")} className={activeTab === "BMW320" ? "active-tab-clicked" : ""}>BMW 320 ModernLine</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="MercedesGLK" onClick={() => handleTabClick("MercedesGLK")} className={activeTab === "MercedesGLK" ? "active-tab-clicked" : ""}>Mercedes-Benz GLK</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="VWPassatCC" onClick={() => handleTabClick("VWPassatCC")} className={activeTab === "VWPassatCC" ? "active-tab-clicked" : ""}>VW Passat CC</Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Col>
+          <Col sm={9}>
+            <Tab.Content>
+              <Tab.Pane eventKey="AudiA1">
+                <Row>
+                  <Col sm={6}>
+                    <img className="car-container" src="/audi.png" alt="Audi A1" />
+                  </Col>
+                  <Col sm={6}>
+                    <Table bordered>
+                      <thead className='table-header'>
+                        <h5>$30 /</h5>
+                        <p className='table-subtext'> rent per day</p>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Model</td>
+                          <td>Audi</td>
+                        </tr>
+                        <tr>
+                          <td>Mark</td>
+                          <td>A1</td>
+                        </tr>
+                        <tr>
+                          <td>Year</td>
+                          <td>2012</td>
+                        </tr>
+                        <tr>
+                          <td>Doors</td>
+                          <td>4/5</td>
+                        </tr>
+                        <tr>
+                          <td>AC</td>
+                          <td>Yes</td>
+                        </tr>
+                        <tr>
+                          <td>Transmission</td>
+                          <td>Manual</td>
+                        </tr>
+                        <tr>
+                          <td>Fuel</td>
+                          <td>Gasoline</td>
+                        </tr>
+                      </tbody>
+                    </Table>
+                  </Col>
+                </Row>
+              </Tab.Pane>
+              <Tab.Pane eventKey="VWGolf6">
+                <Row>
+                <div className='car-table-container'>
+                  <Col sm={6}>
+                    <img className="car" src="/audi.png" alt="Audi A1" />
+                  </Col>
+                  <Col sm={3}>
+                    <div className="table-with-image">
+                      <Table bordered>
+                        <thead>
+                          <tr>
+                            <th className="golf" scope="col" colSpan="2">
+                              <div className="table-header">
+                                <h5>
+                                  <strong>$30 </strong>&nbsp;
+                                </h5>
+                                <p className="table-subtext">/ rent per day</p>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Model</td>
+                            <td>320</td>
+                          </tr>
+                          <tr>
+                            <td>Mark</td>
+                            <td>BMW</td>
+                          </tr>
+                          <tr>
+                            <td>Doors</td>
+                            <td>4/5</td>
+                          </tr>
+                          <tr>
+                            <td>AC</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>manual</td>
+                          </tr>
+                          <tr>
+                            <td>Fuel</td>
+                            <td>Diesel</td>
+                          </tr>
+                          <button className="reserve-btn">RESERVE NOW</button>
+                        </tbody>
+                      </Table>
+                    </div>
+                  </Col>
+                  </div>
+                </Row>
+              </Tab.Pane>
+
+              <Tab.Pane eventKey="ToyotaCamry">
+                {/* Add Toyota Camry details here */}
+              </Tab.Pane>
+
+              <Tab.Pane eventKey="BMW320">
+                {/* Add BMW 320 details here */}
+              </Tab.Pane>
+
+              <Tab.Pane eventKey="MercedesGLK">
+                {/* Add Mercedes GLK details here */}
+              </Tab.Pane>
+
+              <Tab.Pane eventKey="VWPassatCC">
+                {/* Add VW Passat CC details here */}
+              </Tab.Pane>
+            </Tab.Content>
+          </Col>
+        </Row>
+      </Tab.Container>
+    </div>
+  );
+}
+
+export default CarReservation;

@@ -11,6 +11,8 @@ import OurTeam from './pages/OurTeam';
 import Contact from './pages/Contact';
 import Search from './components/search';
 import Info from './components/Info';
+import CarReservation from './components/CarReservation';
+import Banner from './components/banner';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
       </Routes>
       <Search />
       <Info />
+      <CarReservation />
+      <Banner />
     </Router>
 
   );

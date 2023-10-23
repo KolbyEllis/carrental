@@ -24,7 +24,7 @@ function Info() {
           <Card.Img
             variant="top"
             src="/operator.png"
-            style={{ ...cardImageStyle, width: '50px', height: '50px', ...glowingImageStyle }}
+            style={{ ...cardImageStyle, width: '150px', height: '150px', ...glowingImageStyle }}
           />
           <Card.Body>
             <Card.Title className="info-card-title" style={cardTextStyle}>Select Car</Card.Title>
@@ -38,7 +38,7 @@ function Info() {
           <Card.Img
             variant="top"
             src="/car-icon.png"
-            style={{ ...cardImageStyle, width: '50px', height: '50px', ...glowingImageStyle }}
+            style={{ ...cardImageStyle, width: '150px', height: '150px', ...glowingImageStyle }}
           />
           <Card.Body>
             <Card.Title className="info-card-title" style={cardTextStyle}>Contact Operator</Card.Title>
@@ -52,7 +52,7 @@ function Info() {
           <Card.Img
             variant="top"
             src="/van-icon.png"
-            style={{ ...cardImageStyle, width: '50px', height: '50px', ...glowingImageStyle }}
+            style={{ ...cardImageStyle, width: '150px', height: '150px', ...glowingImageStyle }}
           />
           <Card.Body>
             <Card.Title className="info-card-title" style={cardTextStyle}>Let's Drive</Card.Title>
