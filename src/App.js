@@ -13,6 +13,7 @@ import Search from './components/search';
 import Info from './components/Info';
 import CarReservation from './components/CarReservation';
 import Banner from './components/banner';
+import WhySection from './components/WhySection';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Info />
       <CarReservation />
       <Banner />
+      <WhySection />
     </Router>
 
   );
