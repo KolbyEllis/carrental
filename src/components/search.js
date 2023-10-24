@@ -10,7 +10,7 @@ function Search() {
 
   return (
     <Container className="search-container">
-      <Row className='test'>
+      <Row>
         <h5 className='search-title'>Book a car</h5>
         <Col md={3}>
           <Form.Group className="mb-3">

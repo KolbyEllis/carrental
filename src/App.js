@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import MyNavbar from './components/Navbar';
 import About from './pages/About';
 import VehicleModels from './pages/VehicleModels';
-import Testimonials from './pages/Testimonials';
+import Testimonials from './components/Testimonials';
 import OurTeam from './pages/OurTeam';
 import Contact from './pages/Contact';
 import Search from './components/search';
@@ -32,6 +32,7 @@ function App() {
       <CarReservation />
       <Banner />
       <WhySection />
+      <Testimonials />
     </Router>
 
   );
