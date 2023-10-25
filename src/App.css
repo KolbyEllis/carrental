@@ -441,6 +441,66 @@ margin: 1rem;
   line-height: 1;
 }
 
+/*FAQ */
+
+.centered-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set the height to 100% to center vertically */
+  text-align: center; /* Center-align the text horizontally */
+  padding: 5rem;
+}
+
+.accordion-container {
+  max-width: 50%; /* Set a maximum width for the accordion */
+  margin: 0 auto; /* Center horizontally */
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+}
+
+
+.faq-section {
+  background-image: url(../public/mini-cooper.png);
+  background-position: -20% 80%; /* Adjust this value to move the image to the left */
+  background-repeat: no-repeat;
+  background-size: 45%;
+  padding: 5rem 0;
+}
+
+
+/*Download App */
+.download-container {
+  background-color: #F8F8F8;
+  padding: 5rem;
+}
+
+.download-text {
+  width: 40%;
+}
+
+.download-image {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 15rem; /* Set the desired width */
+  height: 5rem; /* Set the desired height */
+}
+
+.download-app {
+  background-image: url(../public/download-app.png);
+  background-position: -4rem 0rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0rem;
+}
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {

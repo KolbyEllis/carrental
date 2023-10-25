@@ -14,6 +14,9 @@ import Info from './components/Info';
 import CarReservation from './components/CarReservation';
 import Banner from './components/banner';
 import WhySection from './components/WhySection';
+import Faq from './components/Faq';
+import Download from './components/Download';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
       <Banner />
       <WhySection />
       <Testimonials />
+      <Faq />
+      <Download />
+      <Footer />
     </Router>
 
   );
