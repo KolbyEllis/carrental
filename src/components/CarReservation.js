@@ -106,7 +106,7 @@ function CarReservation() {
                 <Row>
                 <div className='car-table-container'>
                   <Col sm={6}>
-                    <img className="car" src="/audi.png" alt="Audi A1" />
+                    <img className="car" src="/vwgolf.jpg" alt="Audi A1" />
                   </Col>
                   <Col sm={3}>
                     <div className="table-with-image">
@@ -164,7 +164,7 @@ function CarReservation() {
                 <Row>
                 <div className='car-table-container'>
                   <Col sm={6}>
-                    <img className="car" src="/audi.png" alt="Audi A1" />
+                    <img className="car" src="/camry.jpg" alt="Audi A1" />
                   </Col>
                   <Col sm={3}>
                     <div className="table-with-image">
@@ -222,7 +222,7 @@ function CarReservation() {
                 <Row>
                 <div className='car-table-container'>
                   <Col sm={6}>
-                    <img className="car" src="/audi.png" alt="Audi A1" />
+                    <img className="car" src="/bmw.jpg" alt="Audi A1" />
                   </Col>
                   <Col sm={3}>
                     <div className="table-with-image">
@@ -281,7 +281,7 @@ function CarReservation() {
                 <Row>
                 <div className='car-table-container'>
                   <Col sm={6}>
-                    <img className="car" src="/audi.png" alt="Audi A1" />
+                    <img className="car" src="/glk.jpg" alt="Audi A1" />
                   </Col>
                   <Col sm={3}>
                     <div className="table-with-image">
@@ -339,7 +339,7 @@ function CarReservation() {
                 <Row>
                 <div className='car-table-container'>
                   <Col sm={6}>
-                    <img className="car" src="/audi.png" alt="Audi A1" />
+                    <img className="car" src="/passat.jpg" alt="Audi A1" />
                   </Col>
                   <Col sm={3}>
                     <div className="table-with-image">
