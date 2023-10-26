@@ -6,17 +6,9 @@ import Home from './pages/Home';
 import MyNavbar from './components/Navbar';
 import About from './pages/About';
 import VehicleModels from './pages/VehicleModels';
-import Testimonials from './components/Testimonials';
+import Testimonials from './pages/Testimonials';
 import OurTeam from './pages/OurTeam';
 import Contact from './pages/Contact';
-import Search from './components/search';
-import Info from './components/Info';
-import CarReservation from './components/CarReservation';
-import Banner from './components/banner';
-import WhySection from './components/WhySection';
-import Faq from './components/Faq';
-import Download from './components/Download';
-import Footer from './components/Footer';
 
 function App() {
   return (
@@ -30,15 +22,7 @@ function App() {
         <Route path="/OurTeam" element={<OurTeam />} />
         <Route path="/ContactUs" element={<Contact />} />
       </Routes>
-      <Search />
-      <Info />
-      <CarReservation />
-      <Banner />
-      <WhySection />
-      <Testimonials />
-      <Faq />
-      <Download />
-      <Footer />
+
     </Router>
 
   );

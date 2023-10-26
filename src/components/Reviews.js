@@ -2,7 +2,7 @@
 import React from 'react';
 
 
-function Testimonials() {
+function Reviews() {
   return (
     <section>
       <div className='test-container'>
@@ -38,4 +38,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default Reviews;

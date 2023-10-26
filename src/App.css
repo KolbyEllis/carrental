@@ -119,6 +119,30 @@ width: 100%;
     margin-top: 6em;
   }
 
+  /* About Us  */
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-paragraph {
+    width: 50%;
+  }
+
+    /* Vehicle Models */
+  .book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+
+  .book-title {
+    padding: 2rem;
+  }
+
+
   /* Search  */
 
   .search-container {
@@ -306,6 +330,7 @@ table {
   text-align: center;
   background-color: #2D2D2D;
   padding: 1.5rem;
+  width: 100%;
 }
 .banner-content-title {
   color: white;
@@ -321,6 +346,7 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+
 
 /*Why Us */
 
@@ -544,7 +570,6 @@ gap: 1rem;
   color: white;
   font-family: "Roboto";
 }
-
 
 @media (max-width: 768px) {
   .info-card {

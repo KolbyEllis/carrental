@@ -44,52 +44,123 @@ function CarReservation() {
           </Col>
           <Col sm={9}>
             <Tab.Content>
-              <Tab.Pane eventKey="AudiA1">
+            <Tab.Pane eventKey="AudiA1">
                 <Row>
+                <div className='car-table-container'>
                   <Col sm={6}>
-                    <img className="car-container" src="/audi.png" alt="Audi A1" />
+                    <img className="car" src="/audi.png" alt="Audi A1" />
                   </Col>
-                  <Col sm={6}>
-                    <Table bordered>
-                      <thead className='table-header'>
-                        <h5>$30 /</h5>
-                        <p className='table-subtext'> rent per day</p>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Model</td>
-                          <td>Audi</td>
-                        </tr>
-                        <tr>
-                          <td>Mark</td>
-                          <td>A1</td>
-                        </tr>
-                        <tr>
-                          <td>Year</td>
-                          <td>2012</td>
-                        </tr>
-                        <tr>
-                          <td>Doors</td>
-                          <td>4/5</td>
-                        </tr>
-                        <tr>
-                          <td>AC</td>
-                          <td>Yes</td>
-                        </tr>
-                        <tr>
-                          <td>Transmission</td>
-                          <td>Manual</td>
-                        </tr>
-                        <tr>
-                          <td>Fuel</td>
-                          <td>Gasoline</td>
-                        </tr>
-                      </tbody>
-                    </Table>
+                  <Col sm={3}>
+                    <div className="table-with-image">
+                      <Table bordered>
+                        <thead>
+                          <tr>
+                            <th className="golf" scope="col" colSpan="2">
+                              <div className="table-header">
+                                <h5>
+                                  <strong>$45 </strong>&nbsp;
+                                </h5>
+                                <p className="table-subtext">/ rent per day</p>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Model</td>
+                            <td>Audi</td>
+                          </tr>
+                          <tr>
+                            <td>Mark</td>
+                            <td>A1</td>
+                          </tr>
+                          <tr>
+                            <td>Year</td>
+                            <td>2012</td>
+                          </tr>
+                          <tr>
+                            <td>Doors</td>
+                            <td>4/5</td>
+                          </tr>
+                          <tr>
+                            <td>AC</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>Manual</td>
+                          </tr>
+                          <tr>
+                            <td>Fuel</td>
+                            <td>Gasoline</td>
+                          </tr>
+                          <button className="reserve-btn">RESERVE NOW</button>
+                        </tbody>
+                      </Table>
+                    </div>
                   </Col>
+                  </div>
                 </Row>
               </Tab.Pane>
               <Tab.Pane eventKey="VWGolf6">
+                <Row>
+                <div className='car-table-container'>
+                  <Col sm={6}>
+                    <img className="car" src="/audi.png" alt="Audi A1" />
+                  </Col>
+                  <Col sm={3}>
+                    <div className="table-with-image">
+                      <Table bordered>
+                        <thead>
+                          <tr>
+                            <th className="golf" scope="col" colSpan="2">
+                              <div className="table-header">
+                                <h5>
+                                  <strong>$37 </strong>&nbsp;
+                                </h5>
+                                <p className="table-subtext">/ rent per day</p>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Model</td>
+                            <td>Golf 6</td>
+                          </tr>
+                          <tr>
+                            <td>Mark</td>
+                            <td>Volkswagen</td>
+                          </tr>
+                          <tr>
+                            <td>Year</td>
+                            <td>2008</td>
+                          </tr>
+                          <tr>
+                            <td>Doors</td>
+                            <td>4/5</td>
+                          </tr>
+                          <tr>
+                            <td>AC</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>Manual</td>
+                          </tr>
+                          <tr>
+                            <td>Fuel</td>
+                            <td>Diesel</td>
+                          </tr>
+                          <button className="reserve-btn">RESERVE NOW</button>
+                        </tbody>
+                      </Table>
+                    </div>
+                  </Col>
+                  </div>
+                </Row>
+              </Tab.Pane>
+              <Tab.Pane eventKey="ToyotaCamry">
                 <Row>
                 <div className='car-table-container'>
                   <Col sm={6}>
@@ -113,11 +184,15 @@ function CarReservation() {
                         <tbody>
                           <tr>
                             <td>Model</td>
-                            <td>320</td>
+                            <td>Camry</td>
                           </tr>
                           <tr>
                             <td>Mark</td>
-                            <td>BMW</td>
+                            <td>Toyota</td>
+                          </tr>
+                          <tr>
+                            <td>Year</td>
+                            <td>2006</td>
                           </tr>
                           <tr>
                             <td>Doors</td>
@@ -129,7 +204,124 @@ function CarReservation() {
                           </tr>
                           <tr>
                             <td>Transmission</td>
-                            <td>manual</td>
+                            <td>Automatic</td>
+                          </tr>
+                          <tr>
+                            <td>Fuel</td>
+                            <td>Hybrid</td>
+                          </tr>
+                          <button className="reserve-btn">RESERVE NOW</button>
+                        </tbody>
+                      </Table>
+                    </div>
+                  </Col>
+                  </div>
+                </Row>
+              </Tab.Pane>
+              <Tab.Pane eventKey="BMW320">
+                <Row>
+                <div className='car-table-container'>
+                  <Col sm={6}>
+                    <img className="car" src="/audi.png" alt="Audi A1" />
+                  </Col>
+                  <Col sm={3}>
+                    <div className="table-with-image">
+                      <Table bordered>
+                        <thead>
+                          <tr>
+                            <th className="golf" scope="col" colSpan="2">
+                              <div className="table-header">
+                                <h5>
+                                  <strong>$35 </strong>&nbsp;
+                                </h5>
+                                <p className="table-subtext">/ rent per day</p>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Model</td>
+                            <td>320</td>
+                          </tr>
+                          <tr>
+                            <td>Mark</td>
+                            <td>BMW</td>
+                          </tr>
+                          <tr>
+                            <td>Year</td>
+                            <td>2006</td>
+                          </tr>
+                          <tr>
+                            <td>Doors</td>
+                            <td>4/5</td>
+                          </tr>
+                          <tr>
+                            <td>AC</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>Automatic</td>
+                          </tr>
+                          <tr>
+                            <td>Fuel</td>
+                            <td>Hybrid</td>
+                          </tr>
+                          <button className="reserve-btn">RESERVE NOW</button>
+                        </tbody>
+                      </Table>
+                    </div>
+                  </Col>
+                  </div>
+                </Row>
+              </Tab.Pane>
+
+              <Tab.Pane eventKey="MercedesGLK">
+                <Row>
+                <div className='car-table-container'>
+                  <Col sm={6}>
+                    <img className="car" src="/audi.png" alt="Audi A1" />
+                  </Col>
+                  <Col sm={3}>
+                    <div className="table-with-image">
+                      <Table bordered>
+                        <thead>
+                          <tr>
+                            <th className="golf" scope="col" colSpan="2">
+                              <div className="table-header">
+                                <h5>
+                                  <strong>$50 </strong>&nbsp;
+                                </h5>
+                                <p className="table-subtext">/ rent per day</p>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Model</td>
+                            <td>Benz GLK</td>
+                          </tr>
+                          <tr>
+                            <td>Mark</td>
+                            <td>Mercedes</td>
+                          </tr>
+                          <tr>
+                            <td>Year</td>
+                            <td>2006</td>
+                          </tr>
+                          <tr>
+                            <td>Doors</td>
+                            <td>4/5</td>
+                          </tr>
+                          <tr>
+                            <td>AC</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>Manual</td>
                           </tr>
                           <tr>
                             <td>Fuel</td>
@@ -143,21 +335,63 @@ function CarReservation() {
                   </div>
                 </Row>
               </Tab.Pane>
-
-              <Tab.Pane eventKey="ToyotaCamry">
-                {/* Add Toyota Camry details here */}
-              </Tab.Pane>
-
-              <Tab.Pane eventKey="BMW320">
-                {/* Add BMW 320 details here */}
-              </Tab.Pane>
-
-              <Tab.Pane eventKey="MercedesGLK">
-                {/* Add Mercedes GLK details here */}
-              </Tab.Pane>
-
               <Tab.Pane eventKey="VWPassatCC">
-                {/* Add VW Passat CC details here */}
+                <Row>
+                <div className='car-table-container'>
+                  <Col sm={6}>
+                    <img className="car" src="/audi.png" alt="Audi A1" />
+                  </Col>
+                  <Col sm={3}>
+                    <div className="table-with-image">
+                      <Table bordered>
+                        <thead>
+                          <tr>
+                            <th className="golf" scope="col" colSpan="2">
+                              <div className="table-header">
+                                <h5>
+                                  <strong>$25 </strong>&nbsp;
+                                </h5>
+                                <p className="table-subtext">/ rent per day</p>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Model</td>
+                            <td>Passat cc</td>
+                          </tr>
+                          <tr>
+                            <td>Mark</td>
+                            <td>Volkswagen</td>
+                          </tr>
+                          <tr>
+                            <td>Year</td>
+                            <td>2008</td>
+                          </tr>
+                          <tr>
+                            <td>Doors</td>
+                            <td>4/5</td>
+                          </tr>
+                          <tr>
+                            <td>AC</td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>Automatic</td>
+                          </tr>
+                          <tr>
+                            <td>Fuel</td>
+                            <td>Gasoline</td>
+                          </tr>
+                          <button className="reserve-btn">RESERVE NOW</button>
+                        </tbody>
+                      </Table>
+                    </div>
+                  </Col>
+                  </div>
+                </Row>
               </Tab.Pane>
             </Tab.Content>
           </Col>

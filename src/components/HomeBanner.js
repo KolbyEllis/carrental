@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Banner() {
+function HomeBanner() {
   return (
     <section>
         <div className='banner-container'>
@@ -20,4 +20,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default HomeBanner;
