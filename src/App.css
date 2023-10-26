@@ -142,6 +142,42 @@ width: 100%;
     padding: 2rem;
   }
 
+    /* Our Team  */
+  .team-container {
+    text-align: center;
+    padding: 5rem;
+  }
+  .team-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .team-card {
+    border-radius: none;
+    border: none;
+    box-shadow: 0 20px 10px 0 rgba(0,0,0,.08);
+    margin: 1rem;
+
+  }
+
+  .team-pic {
+    background-color: #F6F6F6;
+  }
+
+  .col {
+    padding: 0;
+  }
+
+  .row {
+    margin: 2rem
+  }
+
+  .card-text {
+    color: #757575;
+    font-family: "Lexend";
+  }
+  
 
   /* Search  */
 
