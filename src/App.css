@@ -9,276 +9,235 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Didact+Gothic&family=Lexend:wght@500&family=Roboto:wght@900&display=swap');
 
 /* navbar */
-
 .nav-text {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-
 .sign-btn {
   background-color: white;
   white-space: nowrap;
 }
-
 .register-btn {
   background-color: #EF6A31;
   padding: 10px 20px;
   border-radius: 5%;
   font-family: Roboto;
 }
-
 .sign-btn, .register-btn, .search-btn {
   border: none;
 }
-
 .nav-text, #navigation-links, .sign-btn {
   font-family: Roboto;
   color: #757575;
   background-color: white;
-
-}
-
+} 
 .sign-btn:hover {
-  background-color: white; /* Reset the background color to normal state */
-  color: #EF6A31; /* Reset the text color to normal state */
+  background-color: white; 
+  color: #EF6A31; 
 }
-
 .register-btn:hover {
-  background-color: #EF6A31; /* Reset the background color to normal state */
+  background-color: #EF6A31; 
 }
 #navigation-links:hover {
   color: #EF6A31;
 }
 
-
 /* Hero */
-
 .hero-container-left {
-width: 100%;
+  width: 100%;
 }
-
 .hero-subtext {
   color: #293646;
-  
 }
-
 .hero-title, .hero-cta {
   font-family: Roboto;
 }
-
 .book-ride-btn {
   background-color: #EF6A31;
 }
-
 .learn-more-btn {
   background-color: #293646;
 }
-
 .btn-container {
   display: flex;
   gap: 1rem;
 }
-
 .book-ride-btn, .learn-more-btn {
   border: none;
   padding: 1rem 2rem;
   border-radius: 0.3%;
   font-family: Roboto;
 }
-
 .book-ride-btn:hover:hover {
     background-color: #EF6A31; /* Reset the background color to normal state */
     color: white; /* Reset the text color to normal state */
-  }
+}
+.learn-more-btn:hover:hover {
+  background-color: #2D2D2D; /* Reset the background color to normal state */
+  color: white; /* Reset the text color to normal state */
+ }
+.mercedes {
+  position: relative; /* Add relative positioning to the .mercedes container */
+  width: 100%;
+}  
+.city {
+  position: absolute; /* Add absolute positioning to the .city element */
+  top: 0rem; /* Position at the top of .mercedes */
+  right: 5rem; /* Position at the right of .mercedes */
+  z-index: -1; /* Set z-index to -1 for .city */
+  width: 50%;
+}
+.mercedes::before {
+  display: block;
+  content: ""; /* Create a pseudo-element to push .city down */
+  padding-top: 56.25%; /* Assuming a 16:9 aspect ratio for .mercedes */
+}
+.hero {
+  display: flex;
+  padding: 1rem;
+  margin-top: 5rem;
+  width: 100%;
+}
 
-  .learn-more-btn:hover:hover {
-    background-color: #2D2D2D; /* Reset the background color to normal state */
-    color: white; /* Reset the text color to normal state */
-  }
-
-  .mercedes {
-    position: relative; /* Add relative positioning to the .mercedes container */
-    width: 100%;
-  }
-  
-  .city {
-    position: absolute; /* Add absolute positioning to the .city element */
-    top: 0rem; /* Position at the top of .mercedes */
-    right: 5rem; /* Position at the right of .mercedes */
-    width: 75%;
-    z-index: -1; /* Set z-index to -1 for .city */
-    width: 50%;
-  }
-  
-  .mercedes::before {
-    content: ""; /* Create a pseudo-element to push .city down */
-    display: block;
-    padding-top: 56.25%; /* Assuming a 16:9 aspect ratio for .mercedes */
-  }
-
+@media (max-width: 768px) {
   .hero {
     display: flex;
-    width: 100%;
-    padding: 1rem;
-    margin-top: 5rem;
-  }
-
-  @media (max-width: 768px) {
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-top: 0; /* Remove the top margin on small screens */
-    }
-    .hero-container-left {
-      text-align: center;
-    }
-    .btn-container {
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .book-ride-btn,
-    .learn-more-btn {
-      width: 100%;
-    }
-    .mercedes, .city {
-      display: none; /* Hide the images on smaller screens */
-    }
-    .search-col {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  @media (min-width: 769px) {
-    .city {
-      display: none;
-
-    }
-  }
-
-  /* About Us  */
-  .about-container {
-    width: 100%;  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about-paragraph {
-    width: 50%;
-    text-align: center;
-    display: flex;
-  }
-
-  @media (max-width: 768px) {
-    .about-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .about-paragraph {
-      width: 100%;
-      padding: 1rem;
-    }
-
-  }
-
-    /* Vehicle Models */
-  .book-container {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5rem;
-  }
-
-  .book-title {
-    padding: 2rem;
-  }
-
-    /* Our Team  */
-  .team-container {
     text-align: center;
-    padding: 5rem;
+    margin-top: 0; /* Remove the top margin on small screens */
   }
-  .team-card-container {
+  .hero-container-left {
+    text-align: center;
+  }
+  .btn-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 1rem;
   }
+  .book-ride-btn, .learn-more-btn {
+    width: 100%;
+  }
+  .mercedes, .city {
+    display: none; /* Hide the images on smaller screens */
+  }
+  .search-col {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+@media (min-width: 769px) {
+  .city {
+    display: none;
+  }
+}
+
+/* About Us  */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;  
+}
+.about-paragraph {
+  text-align: center;
+  display: flex;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .about-paragraph {
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+/* Vehicle Models */
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.book-title {
+  padding: 2rem;
+}
+
+/* Our Team  */
+.team-container {
+  text-align: center;
+  padding: 5rem;
+}
+.team-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.team-card {
+  border-radius: none;
+  border: none;
+  box-shadow: 0 20px 10px 0 rgba(0,0,0,.08);
+  margin: 1rem;
+}
+.team-pic {
+  background-color: #F6F6F6;
+}
+.col {
+  padding: 0;
+}
+.row {
+margin: 2rem
+}
+.card-text {
+  color: #757575;
+  font-family: "Lexend";
+} 
+ 
+@media (max-width: 768px) {
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem;
+    width: 100%;
+  }
   .team-card {
-    border-radius: none;
-    border: none;
-    box-shadow: 0 20px 10px 0 rgba(0,0,0,.08);
-    margin: 1rem;
-
-  }
-
-  .team-pic {
-    background-color: #F6F6F6;
-  }
-
-  .col {
+    display: flex;
+    flex-direction: column;
     padding: 0;
+    margin: 1rem 0rem;
   }
-
+  .team-card {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    width: 100%;
+  }
   .row {
-    margin: 2rem
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
-
-  .card-text {
-    color: #757575;
-    font-family: "Lexend";
+  .col-xl-4, .col-lg-4, .col-md-4, .col-sm-6, .col-12 {
+    display: flex;
+    margin: 1rem 0rem;
+    width: 100%;
   }
-
-  
-  @media (max-width: 768px) {
-    .team-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      padding: 1rem 0rem;
-    }
-
-      .team-card {
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      margin: 1rem 0rem;
-
-      }
-      .team-card {
-
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 1rem;
-      }
-      .row {
-        margin: 1rem 0rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-      }
-        .col-xl-4, .col-lg-4, .col-md-4, .col-sm-6, .col-12 {
-          width: 100%;
-          display: flex;
-          margin: 1rem 0rem;
-        }
-
-      
-    }
-  
+}
   
 /*Contact */
 .contact-container {
@@ -286,63 +245,52 @@ width: 100%;
 } 
 
   /* Search  */
-
-  .search-container {
-    background-image: url(/public/search-container.png);
-    justify-content: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Customize the shadow here */
-    padding: 1rem;
-    width: 70%;
-    }
-  
-  .search-col {
-    padding-bottom: 1rem;
-  
-  }
-  .search-btn {
-    width: 100%;
+.search-container {
+  background-image: url(/public/search-container.png);
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Customize the shadow here */
+  padding: 1rem;
+  width: 70%;
+}  
+.search-col {
+  padding-bottom: 1rem; 
+}
+.search-btn {
     background-color: #EF6A31;
     color: white;
     border-radius: 0;
     margin-top: 1.5em;
     font-family: Roboto;
-  }
-
-  .datepicker-group {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form-select, .date-selection {
-    cursor: pointer;
-    color: #757575;
-    font-size: small;
-  }
-
-  .date-selection {
     width: 100%;
   }
-
-  .form-label, .form-select, .search-title, .date-selection {
-    font-family: "Lexend";
-    }
-
-  .search-btn:hover:hover {
-    background-color: #EF6A31; 
-    color: white; 
-    
+.datepicker-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-select, .date-selection {
+  cursor: pointer;
+  color: #757575;
+  font-size: small;
+}
+.date-selection {
+  width: 100%;
+}
+.form-label, .form-select, .search-title, .date-selection {
+  font-family: "Lexend";
+}
+.search-btn:hover:hover {
+  background-color: #EF6A31; 
+  color: white;   
   }
+.search-icon {
+  color: #EF6A31;
+}
 
-  .search-icon {
-    color: #EF6A31;
+@media (max-width: 768px) {
+  .search-container {
+    padding: 0;
   }
-
-  @media (max-width: 768px) {
-    .search-container {
-      padding: 0;
-
-    }
-     .form-label {
+  .form-label {
     white-space: nowrap; /* Prevent wrapping */
   }
   .search-container {
@@ -353,50 +301,42 @@ width: 100%;
   }
 }
 
-
 /*Info */
 .info-container {
-text-align: center;
-padding: 5rem;
+  text-align: center;
+  padding: 5rem;
 }
-
 .info-text {
   font-family: "Lexend";
   font-size: small;
 }
-
 .search-title {
-padding: 1rem;
-font-weight: bolder;
+  padding: 1rem;
+  font-weight: bolder;
 }
-
 .info-body {
   margin: 2rem;
   border: none;
 }
-
 .info-card {
   display: flex;
   justify-content: center;
   padding: 2rem;
 }
-
 .info-card-title {
   font-family: "Lexend";
 }
-
 .info-title, .info-text {
-color: #757575;
+  color: #757575;
 }
 
 @media (max-width: 768px) {
   .info-card {
+    display: flex;
     flex-direction: column; /* Stack cards vertically on smaller screens */
     align-items: center; /* Center cards vertically */
     padding: 1rem;
-
   }
-
   .info-body {
     width: 100%; /* Make card bodies full width on smaller screens */
   }
@@ -404,107 +344,82 @@ color: #757575;
     display: flex;
     flex-direction: column;
   }
-
   .car {
     width: 100%; /* Adjust the image width as needed for small screens */
     max-width: 100%; /* Ensure the image doesn't exceed its container */
   }
   .table-header {
-    width: 10rem;
     display: flex;
+    width: 10rem;
   }
 }
 
-
-
-
 /*Car Reservation */
 .reservation-container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 5rem;
-  display: flex;
   justify-content: center;
-  flex-direction: column;
 }
-
-
 .reservation-container-text {
   color: #757575;
   width: 100%;
-
 }
-
-
 .nav-link {
   margin: 0.5rem;
   color: black;
   background-color: #E9E9E9;
   font-weight: bolder;
 }
-
-
 .nav-link:hover {
   color: white;
   background-color: #EF6A31;
 }
-
-
 .active-tab-clicked {
   background-color: #EF6A31 !important; 
   color: #fff; 
   font-weight: bold; 
 }
-
 .active-tab-clicked:hover {
   color: white;
 }
-
 .flex-column {
   width: 75%;
 }
-
 .car {
   width: 100%;
 }
-
 .table-header {
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
 }
-
 .table-subtext {
   margin-top: 0.5rem;
   font-weight: 400;
 }
-
 .table-header, .table-subtext {
   color: white;
   font-family: "Lexend";
   background-color: #EF6A31;
   padding: 0;
 }
-
-/* Set fixed width for table columns */
-th, td {
-  width: 50%; /* Adjust the value as needed */
+th, td { 
   font-family: "Lexend";
+  width: 50%;
 }
-
 table {
   table-layout: fixed;
   width: 100%;
 }
-
-
 .golf {
   background-color: #EF6A31 !important;
   color: black;
   border: none;
   padding: 0 !important;
 }
-
 .reserve-btn {
   background-color: #EF6A31;
   color: white;
@@ -514,23 +429,19 @@ table {
   width: 31vh;
   height: 3rem;
 }
-
 .span {
   color: #EF6A31;
 }
-
 .car-table-container {
   display: flex;
   justify-content: space-between;
 }
 
-
 @media (max-width: 768px) {
-
   .nav-link {
-    width: 100%;
     text-align: center;
     white-space: nowrap;
+    width: 100%;
   }
   .reservation-container {
     display: flex;
@@ -539,23 +450,19 @@ table {
     justify-content: center;
     padding: 1.5rem;
     width: 100%;
-
   }
   .nav-item {
-    width: 100%;
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
-
+    width: 100%;
   }
-
   .flex-column {
     width: 50vh;
   }
   .table-with-image {
     width: 100%;
   }
-
   .car {
     margin-bottom: 2rem;
   }
@@ -564,18 +471,13 @@ table {
     width: 100%;
   }
   .reserve-btn {
-    width: 200%;
     white-space: nowrap;
     text-align: center;
+    width: 200%;
   }
 }
 
-
- 
-
-
 /*Banner */
-
 .banner-content {
   text-align: center;
   background-color: #2D2D2D;
@@ -588,7 +490,6 @@ table {
   text-align: center;
   font-size: 3.5rem;
 }
-
 .banner-content-paragraph {
   font-family: "Lexend";
   color: white;
@@ -606,25 +507,19 @@ table {
   width: 100%;
   height: 70vh;
 }
-
 .why-pic {
-  max-width: 80%; /* Adjust the value to control the size */
+  max-width: 80%;
   height: auto;
-  /* Add any additional styling you need */
 }
-
 .why-text-container {
   display: flex;
   justify-content: space-between;
   font-family: "Lexend";
   padding: 0 10rem;
-
 }
-
 .why-text-container-left {
   width: 40%;
 }
-
 .why-btn {
   color: white;
   background-color: #EF6A31;
@@ -633,31 +528,25 @@ table {
   padding: 1rem 3rem;
   border-radius: 0.3rem;
 }
-
 .why-text-title {
   font-weight: bolder;
 }
-
 .why-text-paragraph {
   color: #757575;
 }
-
 .why-text-container-right {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-
 .why-icons {
   width: 1rem;
   height: 1rem;
 }
-
 .why-text-container-box {
-display: flex;
-margin: 1rem;
+  display: flex;
+  margin: 1rem;
 }
-
 .why-text-container-text {
   display: flex;
   flex-direction: column;
@@ -669,13 +558,12 @@ margin: 1rem;
     height: 20rem;
   }
   .why-text-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     padding: 1rem;
-   
+    width: 100%;  
   }
   .why-text-container-left {
     display: flex;
@@ -683,107 +571,85 @@ margin: 1rem;
     justify-content: center;
     align-items: center;
     width: 100%;
-    
   }
   .why-text-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
     margin: 1rem;
     font-weight: bolder;
-
-
+    width: 70%;
   }
   .why-text-paragraph {
-    width: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     white-space: wrap;
     margin: 1rem;
     font-size: small;
-
+    width: 50vh;
   }
-
   .why-text-container-right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     margin: 2rem;
+    width: 100%;
   }
-
   .why-text-container-box {
     display: flex;
     flex-direction: column;
-    width: 50%;
     justify-content: center;
     white-space: nowrap;
-    
-  
-    }
-
+    width: 50%;
+  }
     .why-text-container-text {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
     }
-
 }
 
-
-
 /*Testimonials */
-
 .test-container {
-  background-color: #F8F8F8;
   display: flex;
   flex-direction: column;
+  background-color: #F8F8F8;
   justify-content: center;
   align-items: center;
   min-height: 85vh;
 }
-
 .test-title {
   text-align: center;
-  width: 40%;
   padding: 1rem;
+  width: 40%;
 }
-
 .test-box-container {
   display: flex;
-  width: 80%; /* You can adjust the width */
   justify-content: center;
+  width: 80%; 
 }
-
 .test-box-left, .test-box-right {
-  width: 48%; /* Adjust the width of child elements */
-  padding: 5rem; /* Add padding to create space inside each element */
+  padding: 5rem;
   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.08);
   margin: 2rem; 
+  width: 48%; 
 }
-
 .test-profile-pic {
-  width: 4rem;
   height: 4rem;
   border-radius: 50%;
   border: none;
   margin-right: 1rem;
+  width: 4rem;
 }
-
 .test-text {
   font-size: 1.5rem;
   width: 100%;
 }
-
 .author-container {
   display: flex;
-
-  
 }
-
 .author-text {
   display: flex;
   flex-direction: column;
@@ -800,8 +666,7 @@ margin: 1rem;
     justify-content: center;
     align-content: center;
     white-space: wrap;
-    width: 100%;
-    
+    width: 100%; 
   }
 
   .test-box-container {
@@ -812,16 +677,14 @@ margin: 1rem;
     width: 100%;
   }
   .test-box-left, .test-box-right {
-    width: 100%;
     padding: 2rem;
     margin: 0;
     background-color: white;
+    width: 100%;
   }
-
 }
 
 /*FAQ */
-
 .centered-text {
   display: flex;
   flex-direction: column;
@@ -831,15 +694,12 @@ margin: 1rem;
   text-align: center; /* Center-align the text horizontally */
   padding: 5rem;
 }
-
 .accordion-container {
-  max-width: 100vh; /* Set a maximum width for the accordion */
-  margin: 0 auto; /* Center horizontally */
+  max-width: 100vh;
+  margin: 0 auto;
   padding-bottom: 5rem;
   padding-left: 2rem;
 }
-
-
 .faq-section {
   background-image: url(../public/mini-cooper.png);
   background-position: -20% 80%; /* Adjust this value to move the image to the left */
@@ -853,50 +713,42 @@ margin: 1rem;
     background-image: none;
   }
   .content-container {
-    width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 100%; 
   } 
-
   .centered-text {
     padding: 2rem;
   }
   .accordion-container {
-    width: 100%;
     padding: 0;
+    width: 100%;
   }
 }
 
-
 /*Download App */
-
 .download-container {
   background-color: #F8F8F8;
   padding: 0rem 5rem;
 }
-
 .download-text {
   width: 50vh;
 }
-
 .download-image {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  width: 15rem; /* Set the desired width */
-  height: 5rem; /* Set the desired height */
+  width: 15rem;
+  height: 5rem; 
 }
-
 .download-app {
   background-image: url(../public/download-app.png);
   background-position: 0rem 0rem;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 0rem;
-
 }
 
 @media (max-width: 768px) {
@@ -924,43 +776,35 @@ margin: 1rem;
   }
 }
 
-
 /*Footer */
 .footer-container {
-  padding: 5rem;
   display: flex;
+  padding: 5rem;
 }
-
 .list-atrributes {
   list-style: none;
 }
-
 .footer-link {
   color: black;
   text-decoration: none;
 }
-
 .footer-link:hover {
   color: #EF6A31;
 }
-
 .footer-content {
   display: flex;
 }
-
 .subscription-container {
-display: flex;
-flex-direction: column;
-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-
 .footer-form {
   border-radius: 0.3rem;
   padding: 0.5rem 1.9rem;
   border: none;
   background-color: #ECECEC;
 }
-
 .footer-btn {
   box-shadow: 0 10px 15px 0 rgba(255,83,48,.25);
   border-radius: 0.3rem;
@@ -973,21 +817,17 @@ gap: 1rem;
 
 @media (max-width: 768px) {
   .footer-container {
-    padding: 2rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    padding: 2rem;
     align-items: center;
+    width: 100%;
   }
   .list-atrributes{
     text-align: center;
     width: 100%;
   }
-
   .ul {
     padding: 0;
   }
-
-
-
 }
