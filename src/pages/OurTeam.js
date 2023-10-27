@@ -1,5 +1,7 @@
 import React from "react";
 import { Card, Col, Row, Container } from "react-bootstrap";
+import AboutBanner from "../components/AboutBanner";
+import Footer from "../components/Footer";
 
 function OurTeam() {
   return (
@@ -78,6 +80,8 @@ function OurTeam() {
           </Col>
         </Row>
       </Container>
+      <AboutBanner />
+      <Footer />
     </div>
   );
 }

@@ -14,13 +14,13 @@ function CarReservation() {
       <h1>Our rental fleet</h1>
       <p className="reservation-container-text">
         Choose from a variety of our amazing vehicles to rent for your next
-        <br />
+
         adventure or business trip
       </p>
 
       <Tab.Container activeKey={activeTab}>
         <Row className="tab-row">
-          <Col sm={3}>
+          <Col xs={12} sm={3}>
             <Nav variant="pills" className="flex-column">
               <Nav.Item>
                 <Nav.Link eventKey="AudiA1" onClick={() => handleTabClick("AudiA1")} className={activeTab === "AudiA1" ? "active-tab-clicked" : ""}>Audi A1 S-Line</Nav.Link>
@@ -42,15 +42,15 @@ function CarReservation() {
               </Nav.Item>
             </Nav>
           </Col>
-          <Col sm={9}>
+          <Col xs={12} sm={9}>
             <Tab.Content>
             <Tab.Pane eventKey="AudiA1">
                 <Row>
                 <div className='car-table-container'>
-                  <Col sm={6}>
+                  <Col xs={12} sm={6}>
                     <img className="car" src="/audi.png" alt="Audi A1" />
                   </Col>
-                  <Col sm={3}>
+                  <Col xs={12} sm={3}>
                     <div className="table-with-image">
                       <Table bordered>
                         <thead>
@@ -105,10 +105,10 @@ function CarReservation() {
               <Tab.Pane eventKey="VWGolf6">
                 <Row>
                 <div className='car-table-container'>
-                  <Col sm={6}>
+                  <Col xs={12} sm={6}>
                     <img className="car" src="/vwgolf.jpg" alt="Audi A1" />
                   </Col>
-                  <Col sm={3}>
+                  <Col xs={12} sm={3}>
                     <div className="table-with-image">
                       <Table bordered>
                         <thead>
@@ -163,10 +163,10 @@ function CarReservation() {
               <Tab.Pane eventKey="ToyotaCamry">
                 <Row>
                 <div className='car-table-container'>
-                  <Col sm={6}>
+                  <Col xs={12} sm={3}>
                     <img className="car" src="/camry.jpg" alt="Audi A1" />
                   </Col>
-                  <Col sm={3}>
+                  <Col xs={12} sm={3}>
                     <div className="table-with-image">
                       <Table bordered>
                         <thead>
@@ -221,10 +221,10 @@ function CarReservation() {
               <Tab.Pane eventKey="BMW320">
                 <Row>
                 <div className='car-table-container'>
-                  <Col sm={6}>
+                  <Col xs={12} sm={3}>
                     <img className="car" src="/bmw.jpg" alt="Audi A1" />
                   </Col>
-                  <Col sm={3}>
+                  <Col xs={12} sm={3}>
                     <div className="table-with-image">
                       <Table bordered>
                         <thead>
@@ -338,10 +338,10 @@ function CarReservation() {
               <Tab.Pane eventKey="VWPassatCC">
                 <Row>
                 <div className='car-table-container'>
-                  <Col sm={6}>
+                  <Col xs={12} sm={3}>
                     <img className="car" src="/passat.jpg" alt="Audi A1" />
                   </Col>
-                  <Col sm={3}>
+                  <Col xs={12} sm={3}>
                     <div className="table-with-image">
                       <Table bordered>
                         <thead>

@@ -11,12 +11,12 @@ function MyNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto nav-text">
-            <Nav.Link href="Home">Home</Nav.Link>
-            <Nav.Link href="About">About</Nav.Link>
-            <Nav.Link href="VehicleModels">Vehicle Models</Nav.Link>
-            <Nav.Link href="Testimonials">Testimonials</Nav.Link>
-            <Nav.Link href="OurTeam">Our Team</Nav.Link>
-            <Nav.Link href="ContactUs">Contact Us</Nav.Link>
+            <Nav.Link id='navigation-links' href="Home">Home</Nav.Link>
+            <Nav.Link id='navigation-links' href="About">About</Nav.Link>
+            <Nav.Link id='navigation-links' href="VehicleModels">Vehicle Models</Nav.Link>
+            <Nav.Link id='navigation-links' href="Testimonials">Testimonials</Nav.Link>
+            <Nav.Link id='navigation-links' href="OurTeam">Our Team</Nav.Link>
+            <Nav.Link id='navigation-links' href="ContactUs">Contact Us</Nav.Link>
           </Nav>
           <Button className="sign-btn d-none d-md-block">Sign In</Button>
           <Button className="register-btn d-none d-md-block">Register</Button>

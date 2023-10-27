@@ -4,7 +4,7 @@ import React from 'react';
 function HomeBanner() {
   return (
     <section>
-        <div className='banner-container'>
+        <div xs={12} className='banner-container'>
             <div className='banner-content'>
                 <div className="banner-content">
                     <h1 className='banner-content-title'>
