@@ -16,7 +16,6 @@ function MyNavbar() {
             <Nav.Link id='navigation-links' href="VehicleModels">Vehicle Models</Nav.Link>
             <Nav.Link id='navigation-links' href="Testimonials">Testimonials</Nav.Link>
             <Nav.Link id='navigation-links' href="OurTeam">Our Team</Nav.Link>
-            <Nav.Link id='navigation-links' href="ContactUs">Contact Us</Nav.Link>
           </Nav>
           <Button className="sign-btn d-none d-md-block">Sign In</Button>
           <Button className="register-btn d-none d-md-block">Register</Button>
