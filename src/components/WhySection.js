@@ -18,21 +18,27 @@ function WhySection() {
         </div>
         <div className='why-text-container-right'>
           <div className='why-text-container-box'>
-            <img src='cross-country.png' alt='icon1' />
+          <div class="why-icons-container">
+            <img className='why-icons' src='cross-country.png' alt='icon1' />
+            </div>
             <div className='why-text-container-text'>
               <h5>Cross Country Drive</h5>
               <p className='why-text-paragraph'>Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.</p>
             </div>
           </div>     
           <div className='why-text-container-box'>
-            <img src='cross-country.png' alt='icon1' />
+          <div class="why-icons-container">
+            <img className='why-icons' src='pricing-icon.png' alt='icon1' />
+            </div>
             <div className='why-text-container-text'>
               <h5>All Inclusive Pricing</h5>
               <p className='why-text-paragraph'>Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.</p>
             </div>
           </div>  
           <div className='why-text-container-box'>
-            <img src='cross-country.png' alt='icon1' />
+          <div class="why-icons-container">
+            <img className='why-icons' src='charges-icon.png' alt='icon1' />
+            </div>
             <div className='why-text-container-text'>
               <h5>No Hidden Charges</h5>
               <p className='why-text-paragraph'>Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.</p>
