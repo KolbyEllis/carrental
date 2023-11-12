@@ -19,8 +19,8 @@ function Info() {
     <div className='info-container'>
       <h5>Plan your trip now</h5>
       <h1>Quick & easy car rental</h1>
-      <div className='info-card'>
-        <Card className="info-body" style={{ width: '18rem' }}>
+      <div className='col-sm-4 col-md-4 col-lg-12 info-card'>
+        <Card className="col-sm-4 col-md-4 col-lg-4 info-body" style={{ width: '18rem' }}>
           <Card.Img
             variant="top"
             src="/operator.png"
@@ -34,7 +34,7 @@ function Info() {
           </Card.Body>
         </Card>
 
-        <Card className="info-body" style={{ width: '18rem' }}>
+        <Card className="col-sm-4 col-md-4 col-lg-4 info-body" style={{ width: '18rem' }}>
           <Card.Img
             variant="top"
             src="/car-icon.png"
@@ -48,7 +48,7 @@ function Info() {
           </Card.Body>
         </Card>
 
-        <Card className="info-body" style={{ width: '18rem' }}>
+        <Card className="col-sm-3 col-md-4 col-lg-4 info-body" style={{ width: '18rem' }}>
           <Card.Img
             variant="top"
             src="/van-icon.png"

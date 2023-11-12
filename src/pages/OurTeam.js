@@ -10,7 +10,7 @@ function OurTeam() {
 
       <Container>
         <Row>
-          <Col xs={12} sm={6} md={4} lg={4} xl={4}>
+          <Col xs={12} sm={12} md={4} lg={4} xl={4}>
             <Card className="team-card" style={{ height: "100%" }}>
               <Card.Img className="team-pic" variant="top" src="/miller.png" />
               <Card.Body>
@@ -21,7 +21,7 @@ function OurTeam() {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={12} sm={6} md={4} lg={4} xl={4}>
+          <Col xs={12} sm={12} md={4} lg={4} xl={4}>
             <Card className="team-card" style={{ height: "100%" }}>
               <Card.Img className="team-pic" variant="top" src="/diaz.png" />
               <Card.Body>
@@ -32,7 +32,7 @@ function OurTeam() {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={12} sm={6} md={4} lg={4} xl={4}>
+          <Col xs={12} sm={12} md={4} lg={4} xl={4}>
             <Card className="team-card" style={{ height: "100%" }}>
               <Card.Img className="team-pic" variant="top" src="/ross.png" />
               <Card.Body>
@@ -45,7 +45,7 @@ function OurTeam() {
           </Col>
           </Row>
           <Row>
-          <Col xs={12} sm={6} md={4} lg={4} xl={4}>
+          <Col xs={12} sm={12} md={4} lg={4} xl={4}>
             <Card className="team-card" style={{ height: "100%" }}>
               <Card.Img className="team-pic" variant="top" src="/rivera.png" />
               <Card.Body>
@@ -56,7 +56,7 @@ function OurTeam() {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={12} sm={6} md={4} lg={4} xl={4}>
+          <Col xs={12} sm={12} md={4} lg={4} xl={4}>
             <Card className="team-card" style={{ height: "100%" }}>
               <Card.Img className="team-pic" variant="top" src="/rizz.png" />
               <Card.Body>
@@ -67,7 +67,7 @@ function OurTeam() {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={12} sm={6} md={4} lg={4} xl={4}>
+          <Col xs={12} sm={12} md={4} lg={4} xl={4}>
             <Card className="team-card" style={{ height: "100%" }}>
               <Card.Img className="team-pic" variant="top" src="/hunt.png" />
               <Card.Body>

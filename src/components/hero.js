@@ -27,8 +27,9 @@ function Hero() {
         </div>
         <div className="hero-container-right">
           <div className="overlay">
+          <Image className="hero-bg" src="/hero-bg.png" alt="city" />
             <Image className="mercedes" src="/mercedes.png" alt="mercedes car" />
-            <Image className="city" src="/city.png" alt="city" />
+
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { Container, Nav, Navbar, Button } from 'react-bootstrap'; // Import the 
 
 function MyNavbar() {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" className='navbar-section'>
       <Container>
         <Navbar.Brand href="Home">
           <img src="/logo.png" alt="" width="125" />
@@ -17,8 +17,8 @@ function MyNavbar() {
             <Nav.Link id='navigation-links' href="Testimonials">Testimonials</Nav.Link>
             <Nav.Link id='navigation-links' href="OurTeam">Our Team</Nav.Link>
           </Nav>
-          <Button className="sign-btn d-none d-md-block">Sign In</Button>
-          <Button className="register-btn d-none d-md-block">Register</Button>
+          <Button className="sign-btn d-none d-lg-block">Sign In</Button>
+          <Button className="register-btn d-none d-lg-block">Register</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

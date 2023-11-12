@@ -12,7 +12,7 @@ function Search() {
     <Container fluid className="search-container">
       <Row>
         <h5 className='search-title'>Book a car</h5>
-        <Col className='search-col' md={4}>
+        <Col className='search-col'sm={12} md={4} lg={4}>
           <Form.Group className="mb-3">
             <Form.Label className="form-label" htmlFor="carTypeSelect"><FontAwesomeIcon className="search-icon" icon={faCar} size="xs" /> Select Your Car Type</Form.Label>
             <Form.Select id="carTypeSelect">
@@ -31,7 +31,7 @@ function Search() {
             />
           </Form.Group>
         </Col>
-        <Col className='search-col' md={4}>
+        <Col className='search-col' sm={12} md={4} lg={4}>
           <Form.Group className="mb-3">
             <Form.Label htmlFor="dropoffLocation"><FontAwesomeIcon className="search-icon" icon={faLocationDot} size="xs" /> Pick-Up</Form.Label>
             <Form.Select id="dropoffLocation">
@@ -49,7 +49,7 @@ function Search() {
             />
           </Form.Group>
         </Col>
-        <Col className='search-col' md={4}>
+        <Col className='search-col' sm={12} md={4} lg={4}>
           <Form.Group className="mb-3">
             <Form.Label htmlFor="dropoffDate"><FontAwesomeIcon className="search-icon" icon={faLocationDot} size="xs" /> Drop-Off</Form.Label>
             <Form.Select id="dropoffDate">
