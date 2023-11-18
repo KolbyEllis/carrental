@@ -13,12 +13,12 @@ function WhySection() {
         <div className='why-text-container-left'>
           <h5>Why Choose Us</h5>
           <h1 className='why-text-title'>Best valued deals you will ever find</h1>
-          <p className='why-text-paragraph'>Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big.</p>
+          <p className='why-text-sub-title'>Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big.</p>
           <button className="why-btn">Find Details <FontAwesomeIcon className="arrow-icon" icon={faGreaterThan} size="xs" /></button>
         </div>
         <div className='why-text-container-right'>
           <div className='why-text-container-box'>
-          <div class="why-icons-container">
+          <div className="why-icons-container">
             <img className='why-icons' src='cross-country.png' alt='icon1' />
             </div>
             <div className='why-text-container-text'>
@@ -27,7 +27,7 @@ function WhySection() {
             </div>
           </div>     
           <div className='why-text-container-box'>
-          <div class="why-icons-container">
+          <div className="why-icons-container">
             <img className='why-icons' src='pricing-icon.png' alt='icon1' />
             </div>
             <div className='why-text-container-text'>
@@ -36,7 +36,7 @@ function WhySection() {
             </div>
           </div>  
           <div className='why-text-container-box'>
-          <div class="why-icons-container">
+          <div className="why-icons-container">
             <img className='why-icons' src='charges-icon.png' alt='icon1' />
             </div>
             <div className='why-text-container-text'>

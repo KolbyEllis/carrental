@@ -21,7 +21,7 @@ function Search() {
           </Form.Group>
         
           <Form.Group className="mb-3 datepicker-group">
-            <Form.Label htmlFor="pickupLocation"><FontAwesomeIcon className="search-icon" icon={faCalendarDays} size="xs" /> Pick-up</Form.Label>
+            <Form.Label><FontAwesomeIcon className="search-icon" icon={faCalendarDays} size="xs" /> Pick-up</Form.Label>
               <DatePicker
                 selected={pickupDate}
                 onChange={(date) => setPickupDate(date)}
@@ -39,7 +39,7 @@ function Search() {
             </Form.Select>
           </Form.Group>
           <Form.Group className="mb-3 datepicker-group">
-            <Form.Label htmlFor="pickupLocation"><FontAwesomeIcon className="search-icon" icon={faCalendarDays} size="xs" /> Pick-up</Form.Label>
+            <Form.Label><FontAwesomeIcon className="search-icon" icon={faCalendarDays} size="xs" /> Pick-up</Form.Label>
               <DatePicker
                 selected={pickupDate}
                 onChange={(date) => setPickupDate(date)}

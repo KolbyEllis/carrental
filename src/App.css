@@ -886,7 +886,7 @@ table {
   font-family: "Lexend";
   margin-top: 1rem;
   border: none;
-  width: 200%;
+  width: 100%;
   height: 2.5rem;
 }
 .span {
@@ -1120,12 +1120,12 @@ table {
 }
 .why-text-container {
   display: flex;
-  justify-content: space-between;
   font-family: "Lexend";
   padding: 0 10rem;
 }
 .why-text-container-left {
   width: 40%;
+
 }
 .why-btn {
   color: white;
@@ -1186,16 +1186,25 @@ table {
     align-items: center;
     margin: 1rem;
     font-weight: bolder;
-    width: 70%;
+    text-align: center;
   }
   .why-text-paragraph {
     display: flex;
     justify-content: center;
     align-items: center;
     white-space: wrap;
-    margin: 1rem;
+    margin: 0rem;
     font-size: small;
     width: 50vh;
+  }
+  .why-text-sub-title {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    white-space: wrap;
+    font-size: small;
+    width: 50vh;
+    color: #757575;
   }
   .why-text-container-right {
     display: flex;
@@ -1237,7 +1246,7 @@ table {
   .why-text-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center vertically */
+    align-items: flex-start; /* Center vertically */
     justify-content: center; /* Center horizontally */
     padding: 1rem;
     width: 100%;  
@@ -1253,12 +1262,21 @@ table {
     text-align: center;
     margin: 1rem;
     font-weight: bolder;
-    width: 70%;
+    text-align: center;
   }
-  .why-text-paragraph {
+  .why-text-sub-title {
+    display: flex;
+    align-items: center;
     text-align: center;
     white-space: wrap;
-    margin: 0.5rem;
+    font-size: small;
+    color: #757575;
+  }
+  .why-text-paragraph {
+    display: flex;
+    align-items: flex-start;
+    text-align: start;
+    white-space: wrap;
     font-size: small;
     width: 50vh;
   }
@@ -1275,12 +1293,15 @@ table {
     justify-content: center;
     white-space: nowrap;
     text-align: center;
+    gap: 0.5rem;
     margin: 0.6rem;
+    
   }
   .why-text-container-text {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
   }
   .why-icons-container {
     display: flex;
@@ -1320,11 +1341,20 @@ table {
     width: 70%;
   }
   .why-text-paragraph {
-    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    text-align: start;
     white-space: wrap;
-    margin: 0.5rem;
     font-size: small;
     width: 50vh;
+  }
+  .why-text-sub-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    white-space: wrap;
+    font-size: small;
+    color: #757575;
   }
   .why-text-container-right {
     display: flex;
@@ -1339,12 +1369,14 @@ table {
     justify-content: center;
     white-space: nowrap;
     text-align: center;
+    gap: 0.5rem;
     margin: 0.6rem;
   }
   .why-text-container-text {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
   }
   .why-icons-container {
     display: flex;
@@ -1366,35 +1398,41 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center; /* Center vertically */
-    justify-content: start; /* Center horizontally */
-    padding: 1rem;
+    justify-content: flex-start; /* Center horizontally */
+    padding: 2rem;
     width: 100%;  
   }
   .why-text-container-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     width: 100%;
   }
   .why-text-title {
-    text-align: start;
+    text-align: flex-start;
     margin: 0rem;
     font-weight: bolder;
-    width: 70%;
   }
   .why-text-paragraph {
+    display: flex;
+    align-items: flex-start;
     text-align: start;
     white-space: wrap;
-    margin: 1rem 0rem;
     font-size: small;
-    width: 100%;
+    width: 50vh;
+  }
+  .why-text-sub-title {
+    display: flex;
+    margin: 0.5rem 0;
+    white-space: wrap;
+    font-size: small;
+    color: #757575;
   }
   .why-text-container-right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem;
     width: 100%;
   }
   .why-text-container-box {
@@ -1402,14 +1440,14 @@ table {
     flex-direction: row;
     justify-content: center;
     white-space: nowrap;
-    text-align: center;
-    margin: 0.6rem;
+    text-align: flex-start;
+    gap: 0.5rem;
   }
   .why-text-container-text {
     width: 100%;
     display: flex;
     justify-content: center;
-    text-align: start;
+    text-align: flex-start;
   }
   .why-icons-container {
     display: flex;
@@ -1429,52 +1467,58 @@ table {
   }
   .why-text-container {
     display: flex;
-    flex-direction: row;
+    justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    justify-content: start; /* Center horizontally */
-    padding: 1rem;
-    width: 100%;  
+    padding: 2rem;
+    width: 100%;
   }
   .why-text-container-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    width: 100%;
+    align-items: flex-start;
+    width: 50%;
   }
   .why-text-title {
-    text-align: start;
+    text-align: flex-start;
     margin: 0rem;
     font-weight: bolder;
-    width: 70%;
   }
   .why-text-paragraph {
-    text-align: start;
+    display: flex;
+    align-items: flex-start;
+    text-align: flex-start;
     white-space: wrap;
-    margin: 1rem 0rem;
-    font-size: small;
-    width: 100%;
+    font-size: medium;
+    width: 50vh;
+  }
+  .why-text-sub-title {
+    display: flex;
+    margin: 0.5rem 0;
+    white-space: wrap;
+    font-size: medium;
+    color: #757575;
   }
   .why-text-container-right {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     margin: 2rem;
-    width: 100%;
+    width: 50%
   }
   .why-text-container-box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     white-space: nowrap;
-    text-align: center;
-    margin: 0.6rem;
+    text-align: flex-start;
+    gap: 0.5rem;
   }
   .why-text-container-text {
     width: 100%;
     display: flex;
     justify-content: center;
-    text-align: start;
+    text-align: flex-start;
   }
   .why-icons-container {
     display: flex;
@@ -1901,6 +1945,7 @@ table {
 .footer-container {
   display: flex;
   padding: 5rem;
+  justify-content: center;
 }
 .list-attributes {
   list-style: none;
@@ -1977,7 +2022,7 @@ table {
     padding: 2rem;
   }
   .list-attributes{
-    text-align: start;
+    text-align: flex-start;
     width: 100%;
   }
   .ul {

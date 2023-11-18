@@ -94,9 +94,9 @@ function CarReservation() {
                             <td>Fuel</td>
                             <td>Gasoline</td>
                           </tr>
-                          <button className="reserve-btn">RESERVE NOW</button>
                         </tbody>
                       </Table>
+                      <button className="reserve-btn">RESERVE NOW</button>
                     </div>
                   </Col>
                   </div>
@@ -152,9 +152,9 @@ function CarReservation() {
                             <td>Fuel</td>
                             <td>Diesel</td>
                           </tr>
-                          <button className="reserve-btn">RESERVE NOW</button>
                         </tbody>
                       </Table>
+                      <button className="reserve-btn">RESERVE NOW</button>
                     </div>
                   </Col>
                   </div>
@@ -210,9 +210,9 @@ function CarReservation() {
                             <td>Fuel</td>
                             <td>Hybrid</td>
                           </tr>
-                          <button className="reserve-btn">RESERVE NOW</button>
                         </tbody>
                       </Table>
+                      <button className="reserve-btn">RESERVE NOW</button>
                     </div>
                   </Col>
                   </div>
@@ -268,9 +268,9 @@ function CarReservation() {
                             <td>Fuel</td>
                             <td>Hybrid</td>
                           </tr>
-                          <button className="reserve-btn">RESERVE NOW</button>
-                        </tbody>
+                        </tbody>               
                       </Table>
+                      <button className="reserve-btn">RESERVE NOW</button>
                     </div>
                   </Col>
                   </div>
@@ -326,9 +326,9 @@ function CarReservation() {
                             <td>Fuel</td>
                             <td>Diesel</td>
                           </tr>
-                            <button className="reserve-btn">RESERVE NOW</button>
                         </tbody>
                       </Table>
+                      <button className="reserve-btn">RESERVE NOW</button>
                     </div>
                   </Col>
                   </div>
@@ -384,9 +384,9 @@ function CarReservation() {
                             <td>Fuel</td>
                             <td>Gasoline</td>
                           </tr>
-                          <button className="reserve-btn">RESERVE NOW</button>
                         </tbody>
                       </Table>
+                      <button className="reserve-btn">RESERVE NOW</button>
                     </div>
                   </Col>
                   </div>
