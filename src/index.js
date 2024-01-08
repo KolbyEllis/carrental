@@ -9,9 +9,9 @@ const root = document.getElementById('root');
 
 createRoot(root).render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
-      <App />
-    </Router>
+  <Router basename={process.env.PUBLIC_URL || ''}>
+    <App />
+  </Router>
   </React.StrictMode>
 );
 
